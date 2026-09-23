@@ -1,0 +1,508 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e8e8e8;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CV CONTAINER
+========================= */
+
+.cv-container {
+    width: 100%;
+    max-width: 1100px;
+    min-height: 100vh;
+    margin: 40px auto;
+
+    display: grid;
+    grid-template-columns: 32% 68%;
+
+    background: #ffffff;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+    background: #111111;
+    color: #ffffff;
+
+    padding: 45px 35px;
+}
+
+
+/* =========================
+   FOTO
+========================= */
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 40px;
+}
+
+.photo-container img {
+    width: 165px;
+    height: 165px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+}
+
+
+/* =========================
+   SIDEBAR SECTION
+========================= */
+
+.sidebar section {
+    margin-bottom: 38px;
+}
+
+.sidebar h2 {
+    font-size: 15px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 18px;
+    padding-bottom: 9px;
+
+    border-bottom: 2px solid #ffffff;
+}
+
+.sidebar p {
+    font-size: 13px;
+
+    margin-bottom: 14px;
+
+    color: #eeeeee;
+}
+
+
+/* =========================
+   SIDEBAR SKILL
+========================= */
+
+.sidebar h3 {
+    font-size: 13px;
+
+    margin-top: 18px;
+    margin-bottom: 8px;
+
+    color: #ffffff;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar li {
+    font-size: 13px;
+
+    margin-bottom: 7px;
+
+    color: #dddddd;
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.content {
+    background: #ffffff;
+
+    padding: 50px 55px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    padding-bottom: 28px;
+
+    border-bottom: 3px solid #111111;
+
+    margin-bottom: 35px;
+}
+
+.header h1 {
+    font-size: 42px;
+
+    line-height: 1.1;
+
+    letter-spacing: 2px;
+
+    font-weight: 800;
+
+    color: #111111;
+}
+
+.header p {
+    margin-top: 12px;
+
+    font-size: 16px;
+
+    letter-spacing: 4px;
+
+    font-weight: bold;
+
+    color: #555555;
+}
+
+
+/* =========================
+   CONTENT SECTION
+========================= */
+
+.content-section {
+    margin-bottom: 40px;
+}
+
+.content-section > h2 {
+    position: relative;
+
+    font-size: 19px;
+
+    letter-spacing: 2px;
+
+    font-weight: 800;
+
+    color: #111111;
+
+    margin-bottom: 20px;
+
+    padding-left: 18px;
+}
+
+
+/* Garis hitam di samping judul */
+
+.content-section > h2::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 2px;
+
+    width: 6px;
+    height: 23px;
+
+    background: #111111;
+}
+
+
+/* =========================
+   PROFIL
+========================= */
+
+.content-section > p {
+    font-size: 14px;
+
+    color: #444444;
+
+    text-align: justify;
+
+    margin-bottom: 14px;
+}
+
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+.experience {
+    position: relative;
+
+    margin-left: 10px;
+
+    padding-left: 25px;
+    padding-bottom: 25px;
+
+    border-left: 2px solid #cccccc;
+}
+
+
+/* Titik timeline */
+
+.experience::before {
+    content: "";
+
+    position: absolute;
+
+    left: -7px;
+    top: 4px;
+
+    width: 11px;
+    height: 11px;
+
+    background: #111111;
+
+    border-radius: 50%;
+}
+
+
+/* Experience terakhir tidak perlu garis terlalu panjang */
+
+.experience:last-child {
+    padding-bottom: 0;
+}
+
+
+/* Judul pengalaman */
+
+.experience h3 {
+    font-size: 15px;
+
+    font-weight: bold;
+
+    color: #111111;
+
+    margin-bottom: 2px;
+}
+
+
+/* Tahun */
+
+.experience span {
+    display: block;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    color: #777777;
+
+    margin-bottom: 7px;
+}
+
+
+/* Deskripsi */
+
+.experience p {
+    font-size: 13px;
+
+    color: #555555;
+
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   EDUCATION
+========================= */
+
+.education {
+    position: relative;
+
+    margin-left: 10px;
+
+    padding-left: 25px;
+
+    padding-bottom: 22px;
+
+    border-left: 2px solid #cccccc;
+}
+
+
+/* Titik pendidikan */
+
+.education::before {
+    content: "";
+
+    position: absolute;
+
+    left: -7px;
+    top: 5px;
+
+    width: 11px;
+    height: 11px;
+
+    background: #111111;
+
+    border-radius: 50%;
+}
+
+
+/* Pendidikan terakhir */
+
+.education:last-child {
+    padding-bottom: 0;
+}
+
+
+/* Nama sekolah */
+
+.education h3 {
+    font-size: 15px;
+
+    font-weight: bold;
+
+    color: #111111;
+
+    margin-bottom: 3px;
+}
+
+
+/* Jurusan + tahun */
+
+.education p {
+    font-size: 13px;
+
+    color: #555555;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 850px) {
+
+    .cv-container {
+        margin: 0;
+
+        grid-template-columns: 35% 65%;
+    }
+
+    .sidebar {
+        padding: 35px 25px;
+    }
+
+    .content {
+        padding: 40px 35px;
+    }
+
+    .header h1 {
+        font-size: 34px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+    body {
+        background: #ffffff;
+    }
+
+    .cv-container {
+        display: block;
+
+        width: 100%;
+
+        margin: 0;
+
+        box-shadow: none;
+    }
+
+
+    /* Sidebar menjadi bagian atas */
+
+    .sidebar {
+        padding: 35px 25px;
+    }
+
+
+    /* Foto */
+
+    .photo-container {
+        margin-bottom: 30px;
+    }
+
+    .photo-container img {
+        width: 140px;
+        height: 140px;
+    }
+
+
+    /* Content */
+
+    .content {
+        padding: 35px 25px;
+    }
+
+
+    /* Header */
+
+    .header h1 {
+        font-size: 30px;
+
+        letter-spacing: 1px;
+    }
+
+    .header p {
+        font-size: 12px;
+
+        letter-spacing: 2px;
+    }
+
+
+    /* Profil */
+
+    .content-section > p {
+        font-size: 13px;
+
+        text-align: left;
+    }
+
+
+    /* Section */
+
+    .content-section > h2 {
+        font-size: 17px;
+    }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+    .sidebar {
+        padding: 30px 20px;
+    }
+
+    .content {
+        padding: 30px 20px;
+    }
+
+    .header h1 {
+        font-size: 26px;
+    }
+
+    .header p {
+        font-size: 11px;
+    }
+
+}
